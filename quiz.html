@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Cyber Security Quiz</h2>
+
+<form id="quizForm">
+
+  <p>1. HTTP is secure?</p>
+  <input type="radio" name="q1" value="no"> No<br>
+  <input type="radio" name="q1" value="yes"> Yes<br>
+
+  <p>2. HTTPS uses encryption?</p>
+  <input type="radio" name="q2" value="yes"> Yes<br>
+  <input type="radio" name="q2" value="no"> No<br>
+
+  <button type="button" onclick="showResult()">Submit</button>
+
+</form>
+
+<h3 id="result"></h3>
+
+<script>
+function showResult() {
+  let score = 0;
+
+  let q1 = document.querySelector('input[name="q1"]:checked');
+  let q2 = document.querySelector('input[name="q2"]:checked');
+
+  if(q1 && q1.value === "no") score++;
+  if(q2 && q2.value === "yes") score++;
+
+  document.getElementById("result").innerText =
+    "Your Score: " + score + "/2";
+}
+</script>
+
+</body>
+</html>

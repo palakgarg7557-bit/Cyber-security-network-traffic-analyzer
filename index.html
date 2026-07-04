@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyber Network Analyzer Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌐 Cyber Network Analyzer PRO</h1>
+  <p>Cyber Security • Networking • Simulation • Testing</p>
+</header>
+
+<!-- DASHBOARD CARDS -->
+<div class="container" id="home">
+
+  <div class="card" onclick="openPage('http')">
+    <h2>🌐 HTTP vs HTTPS</h2>
+    <p>Learn secure vs insecure communication</p>
+  </div>
+
+  <div class="card" onclick="openPage('analyzer')">
+    <h2>🔍 Website Analyzer</h2>
+    <p>Check website safety & protocol</p>
+  </div>
+
+  <div class="card" onclick="openPage('traffic')">
+    <h2>📡 Traffic Simulator</h2>
+    <p>Visualize packet flow</p>
+  </div>
+
+  <div class="card" onclick="openPage('quiz')">
+    <h2>❓ Cyber Quiz</h2>
+    <p>Test your knowledge</p>
+  </div>
+
+  <div class="card" onclick="openPage('cert')">
+    <h2>🏆 Certificate</h2>
+    <p>Generate completion certificate</p>
+  </div>
+
+</div>
+
+<div id="content"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
